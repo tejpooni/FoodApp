@@ -17,13 +17,10 @@ const SearchScreen = (props) => {
         return restaurants.price === price;
     })
   }
-  //having an empty parent element <> </> placeholder we dont have to add flex:1 content
-  //automatically rendered and by default react native wont allow content to go off of the screen
+ 
 
   return (
-    // <View style={{borderColor: 'red', borderWidth:10}}>//to see border sizes
-    //now lets set border constraints to allow vertical scrolling 
-    //content cut off or expanding off screen add flex 1 tp parent comp usually works
+   
     <View style={{flex:1}}>
       <SearchBar
         term={term}
